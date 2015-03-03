@@ -15,5 +15,5 @@ class Oscillator {
     return (sin(_theta) *  _length / 2) + _length / 2; 
   }
   
-}
+};
 
