@@ -22,6 +22,14 @@ class Creature extends BehaviorParticle {
     popMatrix();
     
   }
+
+  public void bounce() {
+    if ( int(position().y) >= height ) {
+      Vector3f v = new Vector3f(-1, 0, 0);    
+      return velocity().angle(v);
+
+    }
+  }
   
   private float getRotation() {
     if(velocity().isNaN() || velocity().magnitude() == 0) return 0;

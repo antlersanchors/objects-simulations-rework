@@ -20,7 +20,7 @@ void setup() {
 
   physics.add(mGravity);  
   
-  creature = new TriangleCreature(width / 2, height / 2, 30);
+  creature = new CircleCreature(width / 2, height / 2, 30);
   
   physics.add(creature);
   
@@ -35,6 +35,7 @@ void draw() {
   noFill();
   
   creature.display();
+  creature.bounce();
 
 }
 
